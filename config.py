@@ -1,6 +1,9 @@
 #Copyright @ISmartCoder
 #Updates Channel: https://t.me/TheSmartDev
 # Telegram API credentials
-API_ID = your_api_id
-API_HASH = "your_api_hash"
-BOT_TOKEN = "Your_Bot_token"
+
+from os import getenv
+
+API_ID = int(getenv("API_ID", "0")
+API_HASH = getenv("API_HASH", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
